@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: Test2
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 59.989 sec <<< FAILURE! - in Test2
+test1(Test2)  Time elapsed: 51.391 sec  <<< FAILURE!
+java.lang.AssertionError: There is 13 not 12 as expected expected:<12> but was:<13>
+	at Test2.test1(Test2.java:81)
+

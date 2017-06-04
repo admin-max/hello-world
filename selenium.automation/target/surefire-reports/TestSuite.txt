@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 144.139 sec <<< FAILURE! - in TestSuite
+test on test(Test1)(Test1)  Time elapsed: 20.779 sec  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'LAPTOP-BO572FC6', ip: '192.168.1.128', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: EdgeDriver
+	at Test1.setup(Test1.java:49)
+Caused by: org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to start.
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'LAPTOP-BO572FC6', ip: '192.168.1.128', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: EdgeDriver
+	at Test1.setup(Test1.java:49)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:4976/status] to be available after 20015 ms
+	at Test1.setup(Test1.java:49)
+Caused by: com.google.common.util.concurrent.UncheckedTimeoutException: java.util.concurrent.TimeoutException
+	at Test1.setup(Test1.java:49)
+Caused by: java.util.concurrent.TimeoutException
+	at Test1.setup(Test1.java:49)
+
+test on test(Test1)(Test1)  Time elapsed: 20.779 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at Test1.close(Test1.java:62)
+
+test1 on test1(Test2)(Test2)  Time elapsed: 26.186 sec  <<< FAILURE!
+java.lang.AssertionError: There is 13 not 12 as expected expected:<12> but was:<13>
+	at Test2.test1(Test2.java:81)
+
